@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="424" height="253">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_452" data-name="사각형 452" d="M6 0h395a6 6 0 0 1 6 6v235H0V6a6 6 0 0 1 6-6z" transform="rotate(-180 203.446 120.734)" style="fill:#77615c"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_454" data-name="사각형 454" class="cls-2" d="M6 0h412a6 6 0 0 1 6 6v247H0V6a6 6 0 0 1 6-6z" transform="translate(0 .308)"/>
+        </clipPath>
+        <linearGradient id="linear-gradient" x1=".973" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset=".018" stop-color="#020202"/>
+            <stop offset="1"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:#2e9fff}
+        </style>
+    </defs>
+    <g id="object_card_02" transform="translate(0 -.308)">
+        <text id="Rechargeable_Gift_Card" data-name="Rechargeable Gift Card" transform="translate(110 125.308)" style="font-family:Montserrat-Medium,Montserrat;font-weight:500;font-size:17px;fill:#fff"><tspan x="0" y="0">Rechargeable Gift Card</tspan></text>
+        <path id="사각형_453" data-name="사각형 453" class="cls-2" d="M6 0h412a6 6 0 0 1 6 6v247H0V6a6 6 0 0 1 6-6z" transform="translate(0 .308)"/>
+        <g id="마스크_그룹_913" data-name="마스크 그룹 913" style="clip-path:url(#clip-path-2)">
+            <path id="패스_428" data-name="패스 428" d="M112.856.158h80.924v253.108H0z" transform="translate(230.51 .042)" style="fill:url(#linear-gradient)"/>
+        </g>
+        <text id="RECHARGEABLE_GIFT_CARD-2" data-name="RECHARGEABLE GIFT CARD" transform="translate(209 120.308)" style="font-family:Montserrat-SemiBold,Montserrat;font-weight:600;letter-spacing:.2em;font-size:17px;fill:#fff"><tspan x="-96.152" y="0">RECHARGEABLE </tspan><tspan x="-61.447" y="20">GIFT CARD</tspan></text>
+        <text id="dal.komm_Gift_card" data-name="dal.komm Gift card" transform="translate(209 233.308)" style="font-size:12px;opacity:.5;font-family:Montserrat-Medium,Montserrat;font-weight:500;fill:#fff"><tspan x="-70.086" y="0">DAL.KOMM GIFT CARD</tspan></text>
+    </g>
+</svg>

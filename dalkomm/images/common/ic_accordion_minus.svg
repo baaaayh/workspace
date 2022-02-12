@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_add" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#222;stroke-width:3px}
+        </style>
+    </defs>
+    <path id="Path" fill="rgba(0,0,0,0)" d="M0 0H40V40H0z"/>
+    <path id="선_1" d="M0 0L0 30" class="cls-2" transform="translate(20 5)"/>
+    <path id="선_2" d="M0 0L0 30" class="cls-2" transform="translate(35 20) rotate(90)"/>
+</svg>

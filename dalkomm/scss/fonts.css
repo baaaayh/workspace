@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+body,
+a,
+button,
+input,
+select,
+textarea {
+    font-family: "Spoqa Han Sans Neo", "sans-serif", "돋움", Dotum, "굴림",
+        Gulim, Verdana, Arial, sans-serif;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Goldplay";
+    src: url("../fonts/GoldplayAlt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cooper Black";
+    src: local("Cooper Black Regular"), local("Cooper-Black-Regular"),
+        url("../fonts/CooperBlackStd.woff2") format("woff2"),
+        url("../fonts/CooperBlackStd.woff") format("woff"),
+        url("../fonts/CooperBlackStd.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HGGGOTHICSSI";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/HGGGOTHICSSI80G.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Montserrat-Light.otf") format("opentype"),
+        url("../fonts/Montserrat-Light.ttf") format("truetype"),
+        url("../fonts/Montserrat-Light.woff") format("woff"),
+        url("../fonts/Montserrat-Light.woff2") format("woff2"),
+        url("../fonts/Montserrat-Light.eot") format("eot");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat-Regular.otf") format("opentype"),
+        url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+        url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.eot") format("eot");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Montserrat-Medium.otf") format("opentype"),
+        url("../fonts/Montserrat-Medium.ttf") format("truetype"),
+        url("../fonts/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("../fonts/Montserrat-Medium.eot") format("eot");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Montserrat-Bold.otf") format("opentype"),
+        url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+        url("../fonts/Montserrat-Bold.woff") format("woff"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.eot") format("eot");
+}

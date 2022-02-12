@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="424" height="253">
+    <path data-name="사각형 450" d="M6 0h412a6 6 0 0 1 6 6v247H0V6a6 6 0 0 1 6-6z" style="fill:#ff592e"/>
+    <path data-name="사각형 451" d="M6 0h285v156H0V6a6 6 0 0 1 6-6z"/>
+    <text transform="translate(150 131.001)" style="font-size:17px;font-family:Montserrat-SemiBold,Montserrat;font-weight:600;letter-spacing:.2em;fill:#fff"><tspan x="0" y="0">PLATINUM</tspan></text>
+    <text data-name="dal.komm Membership card" transform="translate(209 217.001)" style="font-size:12px;font-family:Montserrat-Medium,Montserrat;font-weight:500;opacity:.5;fill:#fff"><tspan x="-35.058" y="0">DAL.KOMM</tspan><tspan x="-62.754" y="15">MEMBERSHIP CARD</tspan></text>
+</svg>
