@@ -1563,6 +1563,9 @@ input[type="search"] + i {
   .mt-120 {
     margin-top: 60px;
   }
+  header.scroll-down {
+    top: -60px;
+  }
   input[type="text"] {
     height: 45px;
     font-size: 14px;
