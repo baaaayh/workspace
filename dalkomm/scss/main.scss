@@ -140,6 +140,7 @@ main {
     span {
         display: inline-block;
         position: absolute;
+        transition: 0.3s ease-in-out;
     }
 }
 .parallax--img {
