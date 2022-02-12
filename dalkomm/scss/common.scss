@@ -49,6 +49,7 @@ $cobalt: #1b4793;
     }
 }
 body {
+    -webkit-text-size-adjust: none;
     &.no-scroll {
         touch-action: none;
         overflow: hidden;
@@ -632,6 +633,7 @@ footer {
             font-size: 16px;
             font-weight: 400;
             color: rgba(34, 34, 34, 0.7);
+            transition: 0.2s ease;
             &:before {
                 position: absolute;
                 content: "";
@@ -654,7 +656,6 @@ footer {
                     width: 100%;
                 }
             }
-
             &:focus {
                 color: $black;
                 font-weight: 500;
@@ -913,7 +914,6 @@ footer {
             a {
                 display: block;
                 padding: 8px 16px;
-                -webkit-text-size-adjust: none;
                 font-size: 14px;
                 &:hover {
                     color: $black;
@@ -1185,6 +1185,8 @@ input[type="search"] {
     box-sizing: border-box;
     &::-webkit-search-cancel-button {
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         right: 45px;
         width: 18px;
         height: 18px;
