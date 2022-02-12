@@ -1184,10 +1184,8 @@ input[type="search"] {
     padding: 0 28px 0 24px;
     box-sizing: border-box;
     &::-webkit-search-cancel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 45px;
+        position: relative;
+        right: 25px;
         width: 18px;
         height: 18px;
         background: red;
