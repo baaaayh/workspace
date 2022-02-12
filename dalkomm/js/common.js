@@ -14,7 +14,6 @@ var Common = (function () {
 
     var lastScroll = 0;
     $(window).on("scroll", function (e) {
-        // console.log(e);
         var st = $(this).scrollTop();
         if (st < 0) {
             headerHider("down");
