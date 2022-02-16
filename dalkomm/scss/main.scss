@@ -375,15 +375,16 @@ main {
     right: 0;
     bottom: 0;
     z-index: 2;
-    background: url("../images/main/menu.png") no-repeat;
-    animation: Rolling 12s linear infinite reverse;
+    background: url("../images/main/menu.png") repeat-x left top;
+    background-size: auto 375px;
+    animation: Rolling 20s linear;
 }
 @keyframes Rolling {
     from {
         background-position: 0 0;
     }
     to {
-        background-position: 100% 0;
+        background-position: 3567px 0;
     }
 }
 .main-section06 {
