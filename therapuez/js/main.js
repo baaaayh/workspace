@@ -117,19 +117,35 @@ var Main = (function () {
     }
 
     function sliderVideo() {
-        var iframe = $(".main_sec01 iframe");
-        var player = new Vimeo.Player(iframe);
-        player.play();
+        var video = new Vimeo.Player($("#sliderVideo"));
         $(".kv_slider").on(
             "beforeChange",
             function (event, slick, currentSlide, nextSlide) {
                 if (nextSlide === 0) {
-                    player.play();
+                    video.play();
                 } else {
-                    player.unload();
+                    video.unload();
                 }
             }
         );
+
+        if (video) {
+            video.on("loaded", function () {
+                // console.log("슬릭 자동재생 중지(플레이어 로드시)");
+                $(".kv_slider").slick("slickPause");
+            });
+            video.on("play", function () {
+                // console.log("슬릭 자동재생 중지(플레이시)");
+                $(".kv_slider").slick("slickPause");
+            });
+            video.on("ended", function () {
+                setTimeout(function () {
+                    // console.log("영상 끝");
+                    $(".kv_slider").slick("slickNext");
+                    $(".kv_slider").slick("slickPlay");
+                }, 100);
+            });
+        }
     }
 
     var bestText = [
