@@ -358,21 +358,21 @@ var Main = (function () {
             start: "25% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".main_sec02", className: "ani" },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".product_slider",
             start: "20% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".main_sec03", className: "ani" },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".main_sec04 .sec_tit",
             start: "20% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".main_sec04 .sec_tit", className: "ani" },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".main_sec04 .main_title p",
@@ -382,7 +382,7 @@ var Main = (function () {
                 targets: ".main_sec04 .main_title p",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".promote_wrap",
@@ -392,21 +392,21 @@ var Main = (function () {
                 targets: ".promote_wrap",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tech_slider",
             start: "20% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".main_sec05", className: "ani" },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".main_sec06",
             start: "20% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".main_sec06", className: "ani" },
-            markers: true,
+            markers: false,
         });
     }
 

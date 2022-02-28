@@ -85,7 +85,7 @@ var Sub = (function () {
                 targets: ".brand_story02 ",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".brand_story02",
@@ -95,7 +95,7 @@ var Sub = (function () {
                 targets: ".brand_story02 .img_ani_box",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".brand_story03",
@@ -105,7 +105,7 @@ var Sub = (function () {
                 targets: ".brand_story03",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".live_title .tech_xl_title",
@@ -115,7 +115,7 @@ var Sub = (function () {
                 targets: ".live_title .tech_xl_title",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".live_title .tech_mid_title",
@@ -125,7 +125,7 @@ var Sub = (function () {
                 targets: ".live_title .tech_mid_title",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".live_title .tech_small_title",
@@ -135,7 +135,7 @@ var Sub = (function () {
                 targets: ".live_title .tech_small_title",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".live_title .img_ani_box",
@@ -145,7 +145,7 @@ var Sub = (function () {
                 targets: ".live_title .img_ani_box",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt01",
@@ -155,7 +155,7 @@ var Sub = (function () {
                 targets: ".tsdt01",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt02_tit .tech_big_title",
@@ -165,7 +165,7 @@ var Sub = (function () {
                 targets: ".tsdt02_tit .tech_big_title",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt02_tit .tech_small_title",
@@ -175,7 +175,7 @@ var Sub = (function () {
                 targets: ".tsdt02_tit .tech_small_title",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt01_tit",
@@ -185,7 +185,7 @@ var Sub = (function () {
                 targets: ".tsdt01_tit",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt01 .img_ani_box",
@@ -195,7 +195,7 @@ var Sub = (function () {
                 targets: ".tsdt01 .img_ani_box",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tsdt02",
@@ -205,7 +205,7 @@ var Sub = (function () {
                 targets: ".tsdt02",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".cert_wrap",
@@ -215,7 +215,7 @@ var Sub = (function () {
                 targets: ".img_ani_box",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
         ScrollTrigger.create({
             trigger: ".tech_tab",
@@ -225,7 +225,7 @@ var Sub = (function () {
                 targets: ".tech_tab",
                 className: "ani",
             },
-            markers: true,
+            markers: false,
         });
     }
 

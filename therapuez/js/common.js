@@ -54,7 +54,7 @@ var Common = (function () {
             start: "20% bottom",
             endTrigger: "html",
             toggleClass: { targets: ".footer", className: "ani" },
-            markers: true,
+            markers: false,
         });
     }
 
