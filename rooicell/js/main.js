@@ -1,0 +1,294 @@
+$(function () {
+    $(window).load(function () {
+        gsap.registerPlugin(ScrollTrigger);
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector(".smooth-scroll"),
+            smooth: true,
+            smoothMobile: true,
+        });
+        locoScroll.on("scroll", ScrollTrigger.update);
+
+        ScrollTrigger.scrollerProxy(".smooth-scroll", {
+            scrollTop(value) {
+                return arguments.length
+                    ? locoScroll.scrollTo(value, 0, 0)
+                    : locoScroll.scroll.instance.scroll.y;
+            },
+            getBoundingClientRect() {
+                return {
+                    top: 0,
+                    left: 0,
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                };
+            },
+            pinType: document.querySelector(".smooth-scroll").style.transform
+                ? "transform"
+                : "fixed",
+        });
+
+        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+        ScrollTrigger.refresh();
+
+        window.addEventListener("resize", function () {});
+
+        // $(".section05 .post_list .list").slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     arrows: false,
+        //     infinite: false,
+        //     variableWidth: true,
+        // });
+
+        const boxes = gsap.utils.toArray(".sec01_txt .txt");
+        // console.log(boxes);
+        const pdItem = gsap.utils.toArray(".product_list .list .item");
+        // console.log(pdItem);
+
+        ScrollTrigger.matchMedia({
+            // desktop
+            "(min-width: 1281px)": function () {
+                gsap.to(".sec01_txt", {
+                    scrollTrigger: {
+                        trigger: ".section01",
+                        scroller: ".smooth-scroll",
+                        start: "+=50%",
+                        end: "+=70%",
+                        scrub: true,
+                        markers: false,
+                    },
+                    opacity: 0,
+                });
+                gsap.to(".section02 .title", {
+                    yPercent: -55,
+                    ease: "none",
+                    duration: 100,
+                    scrollTrigger: {
+                        trigger: ".section02",
+                        scroller: ".smooth-scroll",
+                        start: "50% bottom",
+                        end: "100% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+                gsap.to(".section02 .title .big", {
+                    yPercent: -35,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section02",
+                        scroller: ".smooth-scroll",
+                        start: "50% bottom",
+                        end: "100% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+                gsap.to(".section03 .inner .contents > .title", {
+                    yPercent: -40,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section03",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+                gsap.to(".section03 .tit", {
+                    scrollTrigger: {
+                        trigger: ".product_contents",
+                        scroller: ".smooth-scroll",
+                        start: "+=0%",
+                        end: "100% 39%",
+                        pin: ".section03 .tit",
+                        pinSpacing: true,
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+
+                gsap.to(".section04 .inner .contents > .title", {
+                    yPercent: -40,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section04",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+                gsap.to(".section05 .inner .contents > .title", {
+                    yPercent: -40,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section05",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+
+                locoScroll.on("scroll", (pos) => {
+                    if (pos.scroll.y > 0) {
+                        document
+                            .querySelector(".header")
+                            .classList.add("scroll-start");
+                        document
+                            .querySelector(".header #gnb")
+                            .classList.add("fade-out");
+                    } else {
+                        document
+                            .querySelector(".header")
+                            .classList.remove("scroll-start");
+                        document
+                            .querySelector(".header #gnb")
+                            .classList.remove("fade-out");
+                    }
+                });
+            },
+
+            "(max-width: 1280px)": function () {
+                gsap.to(".sec01_txt", {
+                    scrollTrigger: {
+                        trigger: ".section01",
+                        scroller: ".smooth-scroll",
+                        start: "+=50%",
+                        end: "+=70%",
+                        scrub: true,
+                        markers: false,
+                    },
+                    opacity: 0,
+                });
+
+                let idx = 0;
+                boxes.forEach((txt) => {
+                    gsap.from(txt, {
+                        duration: 1,
+                        opacity: 0,
+                        yPercent: 100,
+                        ease: "out",
+                        delay: idx,
+                        scrollTrigger: {
+                            trigger: ".section01",
+                            scroller: ".smooth-scroll",
+                            start: "top 80%",
+                            markers: false,
+                        },
+                    });
+                    idx = idx + 0.1;
+                    // console.log(idx);
+                });
+
+                gsap.to(".section02 .title", {
+                    yPercent: -45,
+                    ease: "none",
+                    duration: 100,
+                    scrollTrigger: {
+                        trigger: ".section02",
+                        scroller: ".smooth-scroll",
+                        start: "50% bottom",
+                        end: "100% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+                gsap.to(".section02 .title .big", {
+                    yPercent: -70,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section02",
+                        scroller: ".smooth-scroll",
+                        start: "50% 80%",
+                        end: "100% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+
+                gsap.to(".section03 .inner .contents > .title", {
+                    yPercent: -60,
+                    ease: "none",
+                    duration: 10,
+                    scrollTrigger: {
+                        trigger: ".section03",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        markers: false,
+                        scrub: true,
+                    },
+                });
+
+                let s3idx = 0;
+                pdItem.forEach((item) => {
+                    gsap.from(item, {
+                        duration: 1.5,
+                        opacity: 0,
+                        yPercent: 10,
+                        ease: "out",
+                        delay: s3idx,
+                        scrollTrigger: {
+                            trigger: item,
+                            scroller: ".smooth-scroll",
+                            start: "top 90%",
+                            markers: false,
+                        },
+                    });
+                    s3idx = s3idx + 0.2;
+                    // console.log(s3idx);
+                });
+                gsap.to(".section04 .title", {
+                    yPercent: -70,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".section04",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        scrub: true,
+                        markers: false,
+                    },
+                });
+                gsap.to(".section05 .title", {
+                    yPercent: -50,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".section05",
+                        scroller: ".smooth-scroll",
+                        start: "top 70%",
+                        end: "40% top",
+                        scrub: true,
+                        markers: false,
+                    },
+                });
+            },
+        });
+    });
+    $(window).on("resize load", function () {
+        const w = window.innerWidth;
+        const slides = document.querySelector(".slick-slide");
+        if (w > 1280 && slides) {
+            $(".section05 .post_list .list").slick("unslick");
+        } else if (w < 1280) {
+            $(".section05 .post_list .list").not(".slick-initialized").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: false,
+                variableWidth: true,
+            });
+        }
+    });
+});
