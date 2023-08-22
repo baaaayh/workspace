@@ -542,6 +542,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .section01 .inner .sec01_txt {
+        bottom: -27px;
+    }
     .section01 .inner .sec01_txt .txt {
         font-size: 80px;
     }
