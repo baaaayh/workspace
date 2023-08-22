@@ -6,7 +6,7 @@ $(function () {
             $(".section05 .post_list .list").slick("unslick");
         } else if (w < 1280) {
             $(".section05 .post_list .list").not(".slick-initialized").slick({
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
                 infinite: false,
