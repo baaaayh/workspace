@@ -1,10 +1,31 @@
 $(function () {
+    $(window).on("resize load", function () {
+        const w = window.innerWidth;
+        const slides = document.querySelector(".slick-slide");
+        if (w > 1280 && slides) {
+            $(".section05 .post_list .list").slick("unslick");
+        } else if (w < 1280) {
+            $(".section05 .post_list .list").not(".slick-initialized").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: false,
+                variableWidth: true,
+            });
+        }
+    });
     $(window).load(function () {
         gsap.registerPlugin(ScrollTrigger);
         const locoScroll = new LocomotiveScroll({
             el: document.querySelector(".smooth-scroll"),
             smooth: true,
             smoothMobile: true,
+            smartphone: {
+                smooth: true,
+            },
+            tablet: {
+                smooth: true,
+            },
         });
         locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -31,20 +52,8 @@ $(function () {
 
         ScrollTrigger.refresh();
 
-        window.addEventListener("resize", function () {});
-
-        // $(".section05 .post_list .list").slick({
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1,
-        //     arrows: false,
-        //     infinite: false,
-        //     variableWidth: true,
-        // });
-
         const boxes = gsap.utils.toArray(".sec01_txt .txt");
-        // console.log(boxes);
         const pdItem = gsap.utils.toArray(".product_list .list .item");
-        // console.log(pdItem);
 
         ScrollTrigger.matchMedia({
             // desktop
@@ -275,20 +284,5 @@ $(function () {
                 });
             },
         });
-    });
-    $(window).on("resize load", function () {
-        const w = window.innerWidth;
-        const slides = document.querySelector(".slick-slide");
-        if (w > 1280 && slides) {
-            $(".section05 .post_list .list").slick("unslick");
-        } else if (w < 1280) {
-            $(".section05 .post_list .list").not(".slick-initialized").slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
-                infinite: false,
-                variableWidth: true,
-            });
-        }
     });
 });
